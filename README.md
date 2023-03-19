@@ -1,1 +1,1 @@
-# mini_microservice
+Simple microservice app using only express.js

@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: posts-depl
+  name: event-bus-depl
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: posts
+      app: event-bus
   template:
     metadata:
       labels:
-        app: posts
+        app: event-bus
     spec:
       containers:
-        - name: posts
-          image: salahhaciakil/micro-post
+        - name: event-bus
+          image: salahhaciakil/micro-event-bus:latest
           ports:
-            - containerPort: 4000
+            - containerPort: 4005

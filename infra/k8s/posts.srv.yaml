@@ -11,4 +11,4 @@ spec:
       protocol: TCP
       port: 4002
       targetPort: 4000
-      nodePort: 30001
+      # nodePort: 30001
